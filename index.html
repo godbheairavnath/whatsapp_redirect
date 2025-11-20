@@ -18,16 +18,17 @@
             color: #ffffff;
         }
 
-        .btn {
-            padding: 15px 30px;
-            background-color: #25D366;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 20px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
+        <button onclick="redirect()" 
+        style="padding: 12px 25px; 
+               font-size: 18px; 
+               background-color: #25D366; 
+               color: white; 
+               border: none; 
+               border-radius: 6px; 
+               cursor: pointer;">
+            Chat On WhatsApp
+    </button>
+
 
         .btn:hover {
             background-color: #1ea955;
@@ -45,6 +46,7 @@
     // WhatsApp Number + Message
             const phone = "9870164173";
             const msg = "Hello sir, I want play game.";
+            window.location.href = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
 
     // URL Encode Message
             const encoded = encodeURIComponent(msg);
