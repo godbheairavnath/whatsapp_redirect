@@ -39,15 +39,20 @@
 
     <button class="btn" onclick="redirect()">Chat on WhatsApp</button>
 
-    <script>
+  <script>
         function redirect() {
-            // नया नंबर + नया message (URL encoded)
-            window.location.href =
-                "https://wa.me/9870164173?text=Hello%20sir%2C%20I%20want%20play%20game.";
-            //window.location.href = "https://wa.me/919870164173";
-            
-        }
-    </script>
+    // WhatsApp Number + Message
+            const phone = "9870164173";
+            const msg = "Hello sir, I want play game.";
+
+    // URL Encode Message
+            const encoded = encodeURIComponent(msg);
+
+    // Final Redirect
+    window.location.href = "https://wa.me/" + phone + "?text=" + encoded;
+}
+</script>
+
 
 </body>
 </html>
