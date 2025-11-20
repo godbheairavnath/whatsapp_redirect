@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Redirect</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #ffffff;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: #25D366;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #1ea955;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn" onclick="redirect()">Chat on WhatsApp</button>
+
+    <script>
+        function redirect() {
+            // 👉 यहाँ अपना WhatsApp number डाल
+            window.location.href = "https://wa.me/918827837963";
+        }
+    </script>
+
+</body>
+</html>
